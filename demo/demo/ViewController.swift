@@ -11,6 +11,8 @@ import UIKit
 @objc class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        let all = TestAll()
+        all.allInfo()
         // Do any additional setup after loading the view, typically from a nib.
     }
 }

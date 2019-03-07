@@ -28,39 +28,62 @@
 @implementation TestAll
 
 NS_ENUM(NSInteger,valueType){
-    typeInt,
-    typeString
-}
+    stringType,
+    stringsType,
+    intType,
+    uint64Type,
+    structType,
+    numberType
+};
 
 - (void)allInfo{
-    NSDictionary * allInfo = @{@(CTL_HW):[
-                                            {@(HW_MACHINE):@(string)},
-                                            {@(HW_MODEL):@(string)},
-                                            {@(HW_NCPU):@(NSInteger)},
-                                            {@(HW_BYTEORDER):@(int)},
-                                            {@(HW_PHYSMEM):@(int)},
-                                            {@(HW_USERMEM):@(int)},
-                                            {@(HW_PAGESIZE):@(int)},
-                                            {@(HW_DISKNAMES):@(strings)},
-                                            {@(HW_DISKSTATS):@(struct)},
-                                            {@(HW_EPOCH):@(int)},
-                                            {@(HW_FLOATINGPT):@(int)},
-                                            {@(HW_MACHINE_ARCH):@(string)},
-                                            {@(HW_VECTORUNIT):@(int)},
-                                            {@(HW_BUS_FREQ):@(int)},
-                                            {@(HW_CPU_FREQ):@(int)},
-                                            {@(HW_CACHELINE):@(int)},
-                                            {@(HW_L1ICACHESIZE):@(int)},
-                                            {@(HW_L1DCACHESIZE):@(int)},
-                                            {@(HW_L2SETTINGS):@(int)},
-                                            {@(HW_L2CACHESIZE):@(int)},
-                                            {@(HW_L3SETTINGS):@(int)},
-                                            {@(HW_L3CACHESIZE):@(int)},
-                                            {@(HW_TB_FREQ):@(int)},
-                                            {@(HW_MEMSIZE):@(uint64_t)},
-                                            {@(HW_AVAILCPU):@(int)},
-                                            {@(HW_MAXID):@(number)}
-                                          ]}
+    NSDictionary * allInfo = @{@(CTL_HW):@{
+                                       @(HW_MACHINE):@(intType),
+                                       @(HW_MODEL):@(intType),
+                                       @(HW_NCPU):@(intType),
+                                       @(HW_BYTEORDER):@(intType),
+                                       @(HW_PHYSMEM):@(intType),
+                                       @(HW_USERMEM):@(intType),
+                                       @(HW_PAGESIZE):@(intType),
+                                       @(HW_DISKNAMES):@(stringsType),
+                                       @(HW_DISKSTATS):@(structType),
+                                       @(HW_EPOCH):@(intType),
+                                       @(HW_FLOATINGPT):@(intType),
+                                       @(HW_MACHINE_ARCH):@(intType),
+                                       @(HW_VECTORUNIT):@(intType),
+                                       @(HW_BUS_FREQ):@(intType),
+                                       @(HW_CPU_FREQ):@(intType),
+                                       @(HW_CACHELINE):@(intType),
+                                       @(HW_L1ICACHESIZE):@(intType),
+                                       @(HW_L1DCACHESIZE):@(intType),
+                                       @(HW_L2SETTINGS):@(intType),
+                                       @(HW_L2CACHESIZE):@(intType),
+                                       @(HW_L3SETTINGS):@(intType),
+                                       @(HW_L3CACHESIZE):@(intType),
+                                       @(HW_TB_FREQ):@(intType),
+                                       @(HW_MEMSIZE):@(uint64Type),
+                                       @(HW_AVAILCPU):@(intType),
+                                       @(HW_MAXID):@(numberType)
+                                       }};
+    for (NSNumber * key in allInfo.allKeys) {
+        NSDictionary * dic = allInfo[key];
+        for (NSNumber * key2 in dic.allKeys) {
+            enum valueType type = [dic[key2] intValue];
+            size_t size = sizeof(int);
+            int results;
+            int mib[2] = {[key intValue], [key2 intValue]};
+            sysctl(mib, 2, &results, &size, NULL, 0);
+            if (type == stringType) {
+                NSString *str = [NSString stringWithCString:results encoding:NSUTF8StringEncoding];
+                NSLog(@"%@",str);
+            }else if(type == intType){
+                int res = (NSUInteger) results;
+                NSLog(@"%d",res);
+            }else{
+                NSLog(@"%ld",results);
+            }
+        }
+    }
 }
 
 - (NSUInteger) getSysInfo: (uint) typeSpecifier

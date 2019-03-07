@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4B35E610222521FD00410A4C /* TestAll.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B35E60F222521FD00410A4C /* TestAll.m */; };
+		4B4EF6A5222FBCF900512F74 /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4EF6A4222FBCF900512F74 /* Aspects.m */; };
+		4B4EF6A8222FBD0F00512F74 /* CAIProbe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B4EF6A7222FBD0F00512F74 /* CAIProbe.framework */; };
 		4BC5814F2224FFB2007D8DC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC5814E2224FFB2007D8DC4 /* AppDelegate.swift */; };
 		4BC581512224FFB2007D8DC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC581502224FFB2007D8DC4 /* ViewController.swift */; };
 		4BC581542224FFB2007D8DC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BC581522224FFB2007D8DC4 /* Main.storyboard */; };
@@ -38,6 +40,9 @@
 		4B35E60D222521FC00410A4C /* demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "demo-Bridging-Header.h"; sourceTree = "<group>"; };
 		4B35E60E222521FD00410A4C /* TestAll.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestAll.h; sourceTree = "<group>"; };
 		4B35E60F222521FD00410A4C /* TestAll.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAll.m; sourceTree = "<group>"; };
+		4B4EF6A3222FBCF900512F74 /* Aspects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Aspects.h; sourceTree = "<group>"; };
+		4B4EF6A4222FBCF900512F74 /* Aspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aspects.m; sourceTree = "<group>"; };
+		4B4EF6A7222FBD0F00512F74 /* CAIProbe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CAIProbe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BC5814B2224FFB2007D8DC4 /* demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BC5814E2224FFB2007D8DC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BC581502224FFB2007D8DC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B4EF6A8222FBD0F00512F74 /* CAIProbe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,13 +84,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B4EF6A2222FBCF900512F74 /* thirdpart */ = {
+			isa = PBXGroup;
+			children = (
+				4B4EF6A3222FBCF900512F74 /* Aspects.h */,
+				4B4EF6A4222FBCF900512F74 /* Aspects.m */,
+			);
+			path = thirdpart;
+			sourceTree = "<group>";
+		};
+		4B4EF6A6222FBD0F00512F74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B4EF6A7222FBD0F00512F74 /* CAIProbe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4BC581422224FFB2007D8DC4 = {
 			isa = PBXGroup;
 			children = (
+				4B4EF6A2222FBCF900512F74 /* thirdpart */,
 				4BC5814D2224FFB2007D8DC4 /* demo */,
 				4BC581622224FFB4007D8DC4 /* demoTests */,
 				4BC5816D2224FFB4007D8DC4 /* demoUITests */,
 				4BC5814C2224FFB2007D8DC4 /* Products */,
+				4B4EF6A6222FBD0F00512F74 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -267,6 +292,7 @@
 				4B35E610222521FD00410A4C /* TestAll.m in Sources */,
 				4BC581512224FFB2007D8DC4 /* ViewController.swift in Sources */,
 				4BC5814F2224FFB2007D8DC4 /* AppDelegate.swift in Sources */,
+				4B4EF6A5222FBCF900512F74 /* Aspects.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

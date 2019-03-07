@@ -1,8 +1,8 @@
 //
-//  TestAll.h
-//  demo
+//  CAIP_Uploader.h
+//  CAIProbe
 //
-//  Created by liyufeng on 2019/2/26.
+//  Created by liyufeng on 2019/3/7.
 //  Copyright © 2019 liyufeng. All rights reserved.
 //
 
@@ -10,9 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TestAll : NSObject
-
-- (void)allInfo;
+@interface CAIP_Uploader : NSObject
 
 @end
 

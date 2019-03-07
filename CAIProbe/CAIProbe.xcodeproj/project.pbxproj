@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B0519552230B2EA0010BDFA /* CAIP_Uploader.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B0519532230B2EA0010BDFA /* CAIP_Uploader.h */; };
+		4B0519562230B2EA0010BDFA /* CAIP_Uploader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0519542230B2EA0010BDFA /* CAIP_Uploader.m */; };
+		4B0519592230B31C0010BDFA /* CAIP_Collecter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B0519572230B31C0010BDFA /* CAIP_Collecter.h */; };
+		4B05195A2230B31C0010BDFA /* CAIP_Collecter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0519582230B31C0010BDFA /* CAIP_Collecter.m */; };
+		4B05195D2230B3530010BDFA /* CAIP_ProbeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B05195B2230B3530010BDFA /* CAIP_ProbeManager.h */; };
+		4B05195E2230B3530010BDFA /* CAIP_ProbeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B05195C2230B3530010BDFA /* CAIP_ProbeManager.m */; };
+		4B0519612230B3AF0010BDFA /* CAIP_ConfigInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B05195F2230B3AF0010BDFA /* CAIP_ConfigInfo.h */; };
+		4B0519622230B3AF0010BDFA /* CAIP_ConfigInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0519602230B3AF0010BDFA /* CAIP_ConfigInfo.m */; };
+		4B4EF6A0222FBC1500512F74 /* CAIP_Aspects.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B4EF69E222FBC1500512F74 /* CAIP_Aspects.h */; };
+		4B4EF6A1222FBC1500512F74 /* CAIP_Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4EF69F222FBC1500512F74 /* CAIP_Aspects.m */; };
+		4B4EF6AB222FC0CD00512F74 /* CAIP_Storage.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B4EF6A9222FC0CD00512F74 /* CAIP_Storage.h */; };
+		4B4EF6AC222FC0CD00512F74 /* CAIP_Storage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4EF6AA222FC0CD00512F74 /* CAIP_Storage.m */; };
 		4BC5819022251146007D8DC4 /* CAIProbe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BC5818622251146007D8DC4 /* CAIProbe.framework */; };
 		4BC5819522251146007D8DC4 /* CAIProbeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BC5819422251146007D8DC4 /* CAIProbeTests.m */; };
 		4BC5819722251146007D8DC4 /* CAIProbe.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BC5818922251146007D8DC4 /* CAIProbe.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -26,6 +38,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B0519532230B2EA0010BDFA /* CAIP_Uploader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAIP_Uploader.h; sourceTree = "<group>"; };
+		4B0519542230B2EA0010BDFA /* CAIP_Uploader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAIP_Uploader.m; sourceTree = "<group>"; };
+		4B0519572230B31C0010BDFA /* CAIP_Collecter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAIP_Collecter.h; sourceTree = "<group>"; };
+		4B0519582230B31C0010BDFA /* CAIP_Collecter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAIP_Collecter.m; sourceTree = "<group>"; };
+		4B05195B2230B3530010BDFA /* CAIP_ProbeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAIP_ProbeManager.h; sourceTree = "<group>"; };
+		4B05195C2230B3530010BDFA /* CAIP_ProbeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAIP_ProbeManager.m; sourceTree = "<group>"; };
+		4B05195F2230B3AF0010BDFA /* CAIP_ConfigInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAIP_ConfigInfo.h; sourceTree = "<group>"; };
+		4B0519602230B3AF0010BDFA /* CAIP_ConfigInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAIP_ConfigInfo.m; sourceTree = "<group>"; };
+		4B4EF69E222FBC1500512F74 /* CAIP_Aspects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAIP_Aspects.h; sourceTree = "<group>"; };
+		4B4EF69F222FBC1500512F74 /* CAIP_Aspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAIP_Aspects.m; sourceTree = "<group>"; };
+		4B4EF6A9222FC0CD00512F74 /* CAIP_Storage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAIP_Storage.h; sourceTree = "<group>"; };
+		4B4EF6AA222FC0CD00512F74 /* CAIP_Storage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAIP_Storage.m; sourceTree = "<group>"; };
 		4BC5818622251146007D8DC4 /* CAIProbe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CAIProbe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BC5818922251146007D8DC4 /* CAIProbe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAIProbe.h; sourceTree = "<group>"; };
 		4BC5818A22251146007D8DC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +80,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B4EF69D222FBC1500512F74 /* aspects */ = {
+			isa = PBXGroup;
+			children = (
+				4B4EF69E222FBC1500512F74 /* CAIP_Aspects.h */,
+				4B4EF69F222FBC1500512F74 /* CAIP_Aspects.m */,
+			);
+			path = aspects;
+			sourceTree = "<group>";
+		};
+		4B4EF6AD222FC10200512F74 /* collection */ = {
+			isa = PBXGroup;
+			children = (
+				4B0519572230B31C0010BDFA /* CAIP_Collecter.h */,
+				4B0519582230B31C0010BDFA /* CAIP_Collecter.m */,
+			);
+			path = collection;
+			sourceTree = "<group>";
+		};
+		4B4EF6AE222FC11500512F74 /* upLoading */ = {
+			isa = PBXGroup;
+			children = (
+				4B0519532230B2EA0010BDFA /* CAIP_Uploader.h */,
+				4B0519542230B2EA0010BDFA /* CAIP_Uploader.m */,
+			);
+			path = upLoading;
+			sourceTree = "<group>";
+		};
+		4B4EF6AF222FC13000512F74 /* storage */ = {
+			isa = PBXGroup;
+			children = (
+				4B4EF6A9222FC0CD00512F74 /* CAIP_Storage.h */,
+				4B4EF6AA222FC0CD00512F74 /* CAIP_Storage.m */,
+			);
+			path = storage;
+			sourceTree = "<group>";
+		};
 		4BC5817C22251146007D8DC4 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +137,7 @@
 		4BC5818822251146007D8DC4 /* CAIProbe */ = {
 			isa = PBXGroup;
 			children = (
+				4B4EF69D222FBC1500512F74 /* aspects */,
 				4BC581AB22251291007D8DC4 /* class */,
 				4BC5818922251146007D8DC4 /* CAIProbe.h */,
 				4BC581A922251229007D8DC4 /* CAIProbe.m */,
@@ -97,8 +158,15 @@
 		4BC581AB22251291007D8DC4 /* class */ = {
 			isa = PBXGroup;
 			children = (
+				4B4EF6AF222FC13000512F74 /* storage */,
+				4B4EF6AE222FC11500512F74 /* upLoading */,
+				4B4EF6AD222FC10200512F74 /* collection */,
 				4BC581AC222512E4007D8DC4 /* CAIP_Utils.h */,
 				4BC581AD222512E4007D8DC4 /* CAIP_Utils.m */,
+				4B05195B2230B3530010BDFA /* CAIP_ProbeManager.h */,
+				4B05195C2230B3530010BDFA /* CAIP_ProbeManager.m */,
+				4B05195F2230B3AF0010BDFA /* CAIP_ConfigInfo.h */,
+				4B0519602230B3AF0010BDFA /* CAIP_ConfigInfo.m */,
 			);
 			path = class;
 			sourceTree = "<group>";
@@ -111,7 +179,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BC5819722251146007D8DC4 /* CAIProbe.h in Headers */,
+				4B05195D2230B3530010BDFA /* CAIP_ProbeManager.h in Headers */,
+				4B4EF6AB222FC0CD00512F74 /* CAIP_Storage.h in Headers */,
 				4BC581AE222512E4007D8DC4 /* CAIP_Utils.h in Headers */,
+				4B4EF6A0222FBC1500512F74 /* CAIP_Aspects.h in Headers */,
+				4B0519612230B3AF0010BDFA /* CAIP_ConfigInfo.h in Headers */,
+				4B0519552230B2EA0010BDFA /* CAIP_Uploader.h in Headers */,
+				4B0519592230B31C0010BDFA /* CAIP_Collecter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +240,7 @@
 				TargetAttributes = {
 					4BC5818522251146007D8DC4 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					4BC5818E22251146007D8DC4 = {
 						CreatedOnToolsVersion = 10.1;
@@ -212,8 +287,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B05195A2230B31C0010BDFA /* CAIP_Collecter.m in Sources */,
 				4BC581AF222512E4007D8DC4 /* CAIP_Utils.m in Sources */,
+				4B0519622230B3AF0010BDFA /* CAIP_ConfigInfo.m in Sources */,
+				4B05195E2230B3530010BDFA /* CAIP_ProbeManager.m in Sources */,
 				4BC581AA22251229007D8DC4 /* CAIProbe.m in Sources */,
+				4B4EF6AC222FC0CD00512F74 /* CAIP_Storage.m in Sources */,
+				4B4EF6A1222FBC1500512F74 /* CAIP_Aspects.m in Sources */,
+				4B0519562230B2EA0010BDFA /* CAIP_Uploader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +438,7 @@
 		4BC5819B22251146007D8DC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -374,6 +456,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.appstore.CAIProbe;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -381,6 +465,7 @@
 		4BC5819C22251146007D8DC4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -398,6 +483,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.appstore.CAIProbe;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
